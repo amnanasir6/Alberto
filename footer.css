@@ -1,0 +1,262 @@
+/* ===== FOOTER ===== */
+
+.site-footer {
+    background: #120B08;
+    color: #E8DCCB;
+    font-family: var(--font-body);
+    border-top: 1px solid rgba(184, 140, 120, 0.35);
+}
+.site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-footer a {
+    text-decoration: none;
+}
+
+/* ----- Newsletter ----- */
+.footer-news {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 80px;
+}
+.footer-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #B88C78;
+    margin: 0 0 16px;
+}
+.footer-news h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.6vw, 58px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: #F5EFE6;
+}
+.footer-news h2 em {
+    font-style: italic;
+    color: #B88C78;
+}
+.news-form {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    width: 100%;
+    max-width: 560px;
+}
+.news-form input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(232, 220, 203, 0.4);
+    border-radius: 0;
+    color: #E8DCCB;
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 14px 2px;
+    outline: none;
+    transition: border-color .3s;
+}
+.news-form input::placeholder {
+    color: rgba(232, 220, 203, 0.6);
+}
+.news-form input:focus {
+    border-bottom-color: #B88C78;
+}
+.news-form button {
+    background: #B88C78;
+    color: #120B08;
+    border: 0;
+    padding: 18px 34px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background .3s, transform .3s;
+}
+.news-form button:hover {
+    background: #E8DCCB;
+    transform: translateY(-2px);
+}
+
+/* ----- Tick ruler - ghadi wali lines ----- */
+.footer-ticks {
+    height: 14px;
+    margin: 60px 0 56px;
+    background:
+        repeating-linear-gradient(90deg, rgba(232, 220, 203, 0.55) 0 1px, transparent 1px 60px) left bottom / 100% 14px no-repeat,
+        repeating-linear-gradient(90deg, rgba(232, 220, 203, 0.28) 0 1px, transparent 1px 15px) left bottom / 100% 7px no-repeat;
+}
+
+/* ----- Links ----- */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1fr;
+    gap: 48px;
+}
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+.footer-logo img {
+    width: 64px;
+    height: 68px;
+    object-fit: contain;
+}
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    line-height: 1;
+    color: #F5EFE6;
+}
+.footer-logo-text small {
+    font-family: var(--font-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #D9A87A;
+    margin-top: 7px;
+}
+.footer-brand p {
+    margin: 26px 0 0;
+    max-width: 380px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(232, 220, 203, 0.7);
+}
+.footer-col h4 {
+    margin: 0 0 26px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #B88C78;
+}
+.footer-col li {
+    margin-bottom: 14px;
+}
+.footer-col a {
+    font-size: 15px;
+    color: #E8DCCB;
+    transition: color .3s, padding-left .3s;
+}
+.footer-col a:hover {
+    color: #B88C78;
+    padding-left: 6px;
+}
+
+/* ----- Copyright ----- */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    padding: 28px 0 32px;
+    border-top: 1px solid rgba(184, 140, 120, 0.25);
+}
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(232, 220, 203, 0.55);
+}
+
+/* ----- Chalti hui patti ----- */
+.footer-ticker {
+    overflow: hidden;
+    background: #0B0705;
+    border-top: 1px solid rgba(184, 140, 120, 0.25);
+    padding: 15px 0;
+}
+.ticker-track {
+    display: flex;
+    width: max-content;
+    animation: tickerMove 40s linear infinite;
+}
+.footer-ticker:hover .ticker-track {
+    animation-play-state: paused; /* Mouse aane pe ruk jaye */
+}
+.ticker-track span {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 22px;
+    white-space: nowrap;
+    font-size: 12.5px;
+    color: rgba(232, 220, 203, 0.65);
+}
+.ticker-track i {
+    color: #B88C78;
+}
+.ticker-track b {
+    font-weight: 700;
+    color: #F5EFE6;
+}
+.ticker-track em {
+    font-style: normal;
+}
+.ticker-track strong {
+    color: #B88C78;
+    font-weight: 700;
+}
+.ticker-track .js-time {
+    font-variant-numeric: tabular-nums;
+}
+.ticker-track .t-sep {
+    color: #B88C78;
+    font-size: 9px;
+    padding: 0 8px;
+}
+@keyframes tickerMove {
+    to { transform: translateX(-50%); }
+}
+
+/* ----- Tablet pe ----- */
+@media (max-width: 991px) {
+    .footer-news {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+    .news-form {
+        max-width: 100%;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+    }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ----- Mobile pe ----- */
+@media (max-width: 480px) {
+    .news-form {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+/* ----- Motion band ho to patti bhi band ----- */
+@media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+}

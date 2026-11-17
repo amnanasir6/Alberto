@@ -1,0 +1,342 @@
+/* ===== SIGNATURE / TECHNOLOGY ===== */
+
+/* Poora section - brown background */
+.sig {
+    position: relative;
+    overflow: hidden;
+    background: #241A15;
+    color: #E8DCCB;
+    padding: 100px 0 60px;
+}
+
+/* Halki roshni - piche wali */
+.sig-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(520px circle at 72% 40%, rgba(217, 168, 122, .11), rgba(217, 168, 122, 0) 62%);
+}
+
+.sig .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Left text + Right video - 2 hisse */
+.sig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Upar wali chhoti line */
+.sig-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 26px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #B88C78;
+}
+
+.sig-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B88C78;
+}
+
+.sig-rule {
+    width: 70px;
+    height: 1px;
+    background: #B88C78;
+}
+
+/* Bara heading */
+.sig h2 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.04;
+    color: #F5EFE6;
+}
+
+.sig h2 em {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    color: #D9A87A;
+}
+
+.sig-lead {
+    margin: 26px 0 0;
+    max-width: 470px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #E8DCCB;
+}
+
+/* Specs wali 4 line */
+.sig-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 36px;
+    max-width: 470px;
+    border-top: 1px solid #B88C78;
+}
+
+.sig-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 16px 0;
+    border-bottom: 1px solid #B88C78;
+}
+
+.sig-spec span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #B88C78;
+}
+
+.sig-spec b {
+    font-size: 15px;
+    font-weight: 500;
+    color: #F5EFE6;
+}
+
+/* Button */
+.sig-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 38px;
+}
+
+.sig-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 70px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sig-btn-fill {
+    background: #B88C78;
+    border: 1px solid #B88C78;
+    color: #120B08;
+}
+
+.sig-btn-fill:hover {
+    background: #E8DCCB;
+    color: #120B08;
+}
+
+/* Right wali video wala box */
+.sig-visual {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    justify-self: end;
+    overflow: hidden;
+}
+
+.sig-tilt {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+/* Gol ring */
+.sig-ring {
+    position: absolute;
+    inset: 8%;
+    border-radius: 50%;
+    border: 1px solid #B88C78;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.sig-ring-2 {
+    inset: 15%;
+    border-style: dashed;
+    border-color: rgba(184, 140, 120, .18);
+}
+
+/* Ghadi wali tick ring - ghoomti hai */
+.sig-track {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    z-index: 2;
+    pointer-events: none;
+    background: repeating-conic-gradient(from -.35deg, rgba(232, 220, 203, .6) 0 .7deg, transparent .7deg 6deg);
+    /* Mask - lines sirf gol ring pe dikhen */
+    -webkit-mask: radial-gradient(circle closest-side, transparent 93%, #000 93.4%);
+    mask: radial-gradient(circle closest-side, transparent 93%, #000 93.4%);
+    animation: sigSpin 120s linear infinite;
+}
+
+.sig-track-minor {
+    background: repeating-conic-gradient(from -.15deg, rgba(232, 220, 203, .3) 0 .3deg, transparent .3deg 1.5deg);
+    -webkit-mask: radial-gradient(circle closest-side, transparent 96.5%, #000 96.9%);
+    mask: radial-gradient(circle closest-side, transparent 96.5%, #000 96.9%);
+}
+
+@keyframes sigSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Video */
+.sig-video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: lighten;
+    pointer-events: none;
+    z-index: 1;
+    /* Mask - video gol lage, kala box na dikhe */
+    -webkit-mask-image: radial-gradient(circle closest-side, #000 72%, transparent 100%);
+    mask-image: radial-gradient(circle closest-side, #000 72%, transparent 100%);
+}
+
+/* Chips - 360 view wala */
+.sig-chip {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #E8DCCB;
+    background: rgba(18, 11, 8, .55);
+    border: 1px solid #B88C78;
+}
+
+.sig-chip b {
+    font-weight: 600;
+    color: #D9A87A;
+}
+
+.sig-chip-a {
+    left: 4%;
+    top: 12%;
+}
+
+.sig-chip-b {
+    right: 6%;
+    bottom: 10%;
+}
+
+.sig-live {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #8FB26B;
+}
+
+/* Neeche wale numbers */
+.sig-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    padding-top: 30px;
+    background: #241A15;
+    border-top: 1px solid #B88C78;
+}
+
+.sig-stat {
+    padding: 10px 24px 0;
+    border-left: 1px solid #B88C78;
+}
+
+.sig-stat:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.sig-stat b {
+    display: block;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1;
+    color: #F5EFE6;
+}
+
+.sig-stat i {
+    font-style: normal;
+}
+
+.sig-stat span {
+    display: block;
+    margin-top: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B88C78;
+}
+
+/* Tablet pe */
+@media (max-width: 991px) {
+    .sig-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sig-visual {
+        justify-self: center;
+        max-width: 520px;
+    }
+
+    .sig-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sig-stat:nth-child(3) {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .sig-stat:nth-child(n+3) {
+        margin-top: 30px;
+        border-top: 1px solid #B88C78;
+    }
+}
+
+/* Mobile pe */
+@media (max-width: 520px) {
+    .sig h2 {
+        font-size: 38px;
+    }
+
+    .sig-btn {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .sig-stat {
+        padding: 24px 14px 0;
+    }
+}

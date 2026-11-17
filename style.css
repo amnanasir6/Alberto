@@ -1,0 +1,507 @@
+/* ===== BASIC ,Home page ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E8DCCB;
+  /* Poori site ka cream background */
+  font-family: "DM Sans", Arial, sans-serif;
+  /* Normal text wala font */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  /* Heading wala font */
+}
+
+/* ===== HEADER - Video ke upar hai ===== */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  color: white;
+  /* Upar se halka black shade taake logo saaf dikhe */
+  background: linear-gradient(to bottom, rgba(8, 6, 5, 0.88), rgba(8, 6, 5, 0.35) 72%, transparent);
+}
+
+/* Upar wali choti patti */
+.utility-bar {
+  font-size: 10.5px;
+  letter-spacing: 1.3px;
+  padding: 6px 0;
+  background: #120B08;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(184, 140, 120, 0.35);
+}
+
+.utility-bar p {
+  margin: 0;
+}
+
+.utility-bar b {
+  color: #B88C78;
+  /* Gold color */
+}
+
+/* Visitors wala dot */
+.visitor-count {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.v-dot {
+  width: 6px;
+  height: 6px;
+  background: #B88C78;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #B88C78;
+}
+
+/* ===== NAVBAR ===== */
+.main-nav {
+  padding: 12px 0;
+  min-height: 78px;
+}
+
+/* Mobile wala 3 lines button */
+.site-header .navbar-toggler {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.site-header .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.logo-circle {
+  width: 75px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 26px;
+  letter-spacing: 7px;
+  line-height: 1;
+  color: #F5EFE6;
+}
+
+.logo-text small {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 4.5px;
+  color: #D9A87A;
+  margin-top: 6px;
+}
+
+/* Menu Links - Sab ek line me */
+.site-header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.site-header .nav-links .nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  padding: 8px 0;
+}
+
+/* Hover pe neeche gold line */
+.site-header .nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  background: #B88C78;
+  transition: 0.3s;
+}
+
+.site-header .nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.site-header .nav-links .nav-link:hover {
+  color: #E8DCCB;
+}
+
+.small-arrow {
+  font-size: 9px;
+}
+
+/* Heart + Cart wale gol icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 18px;
+}
+
+.nav-icons a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.nav-icons a:hover {
+  background: #E8DCCB;
+  color: #3A2E2A;
+}
+
+/* Cart ke upar 0 wala gol */
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #B88C78;
+  color: white;
+  font-size: 9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== DROPDOWN - PRODUCTS ka menu ===== */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.site-header .nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2A1F1A;
+  width: 260px;
+  padding: 10px 0;
+  border: 1px solid rgba(58, 46, 42, 0.15);
+  border-top: 2px solid #B88C78;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Beech ka gap bharne ke liye invisible pull */
+.site-header .nav-links .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+}
+
+/* Desktop pe hover se khulega */
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.site-header .nav-links .dropdown-menu a {
+  display: block;
+  color: #E8DCCB;
+  padding: 13px 24px;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.site-header .nav-links .dropdown-menu a:hover {
+  background: rgba(184, 140, 120, 0.18);
+  color: white;
+  border-left: 2px solid #B88C78;
+  padding-left: 30px;
+}
+
+/* Mobile me JS se khulne wala class */
+.site-header .nav-links .dropdown-menu.show-menu {
+  display: block;
+}
+
+/* ===== HERO VIDEO ===== */
+.hero-video-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video ke upar kala shade taake text saaf dikhe */
+.hero-video-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.28) 50%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 640px;
+  padding: 190px 0 70px;
+  color: white;
+  animation: fadeUp 1.2s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 18px;
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  background: #B88C78;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #B88C78;
+}
+
+.hero-small {
+  color: #B88C78;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-text h1 {
+  font-size: clamp(44px, 5.4vw, 72px);
+  line-height: 0.98;
+  font-weight: 400;
+}
+
+/* & aur luminous wala shine */
+.amp-shine,
+.gold-text {
+  display: inline-block;
+  font-style: italic;
+  background: linear-gradient(90deg, #E8DCCB, #B88C78, #FFFFFF, #B88C78, #E8DCCB);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+.amp-shine {
+  padding: 0 12px 0 4px;
+  margin-right: -6px;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.hero-sub {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 480px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Hero Buttons - Dono transparent */
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  max-width: 400px;
+}
+
+.hero-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 18px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 70px;
+  background: transparent;
+  color: #E8DCCB;
+  border: 1px solid rgba(232, 220, 203, 0.65);
+  transition: 0.35s;
+}
+
+/* Hover pe brown ho jayega */
+.hero-btn:hover {
+  background: #2A1F1A;
+  border-color: #2A1F1A;
+  color: #E8DCCB;
+  transform: translateY(-3px);
+}
+
+/* Neeche wale numbers */
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 34px;
+  padding-top: 20px;
+}
+
+.hero-trust div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-trust b {
+  font-size: 20px;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #E8DCCB;
+}
+
+.hero-trust span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.trust-line {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Scroll wala nishaan */
+.scroll-hint {
+  position: absolute;
+  bottom: 28px;
+  right: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #B88C78;
+  animation: scrollDown 1.8s infinite;
+}
+
+@keyframes scrollDown {
+  to {
+    top: 100%;
+  }
+}

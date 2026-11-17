@@ -1,0 +1,478 @@
+/* ===== ABOUT ===== */
+.about-section {
+  background: #FDFBF7;
+  padding: 70px 40px 80px;
+  font-family: 'Georgia', serif;
+  color: #1A130E;
+}
+
+.about-inner {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.about-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8A6D2B;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Grid - Left photo + Right text */
+.about-grid {
+  display: grid;
+  grid-template-columns: 52% 48%;
+  gap: 40px;
+  align-items: start;
+}
+
+/* About wali photo */
+.about-img-wrap {
+  width: 100%;
+  max-width: 600px;
+  overflow: visible;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.about-text {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Bara heading */
+.about-title {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin: 0 0 45px;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+
+.about-title .line {
+  display: block;
+  opacity: 0;
+  transform: translateY(45px);
+  animation: riseUp 1s ease forwards;
+}
+
+.about-title .line-1 {
+  color: #1A130E;
+  font-style: normal;
+  animation-delay: .2s;
+}
+
+.about-title .line-2 {
+  color: #C39A7A;
+  font-style: italic;
+  animation-delay: .7s;
+  position: relative;
+  width: fit-content;
+}
+
+@keyframes riseUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading ke neeche wali line */
+.about-title .line-2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 2px;
+  width: 0;
+  background: #C9A86A;
+  animation: drawLine .8s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes drawLine {
+  to {
+    width: 100%;
+  }
+}
+
+.about-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8A6D2B;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.about-sub {
+  font-size: 24px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #1A130E;
+  margin: 0 0 22px;
+  max-width: 480px;
+}
+
+.about-para {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: #5A4E42;
+  font-family: Arial, sans-serif;
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+
+.about-link {
+  display: inline-flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  color: #1A130E;
+  text-decoration: none;
+  border-bottom: 1px solid #C9A86A;
+  padding-bottom: 12px;
+}
+
+.about-link span {
+  color: #C9A86A;
+  font-size: 16px;
+}
+
+/* Mobile pe About */
+@media(max-width: 800px) {
+  .about-section {
+    padding: 45px 20px 55px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-title {
+    font-size: 42px;
+    margin-bottom: 35px;
+  }
+
+  .about-img {
+    height: 360px;
+  }
+
+  .about-sub {
+    font-size: 20px;
+  }
+}
+
+/* ===== SUPPORT ===== */
+.support-section {
+  padding: 50px 0 80px;
+  background: #FDFBF7;
+}
+
+/* Upar wala head - heading + intro box */
+.support-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.atelier-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #B88C78;
+  margin-bottom: 12px;
+}
+
+.atelier-kicker span {
+  width: 28px;
+  height: 1px;
+  background: #B88C78;
+}
+
+.support-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5vw, 56px);
+  line-height: 1.1;
+  color: #241A15;
+  font-weight: 500;
+}
+
+.support-head h2 em {
+  font-style: italic;
+  color: #B88C78;
+}
+
+/* Intro Box - dark wala */
+.support-intro-premium {
+  max-width: 440px;
+  background: #241A15;
+  color: #fff;
+  border-radius: 16px;
+  padding: 22px 24px;
+}
+
+.intro-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #C9A08C;
+  margin-bottom: 10px;
+}
+
+.support-intro-premium p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #EDE6DD;
+  margin: 0 0 14px;
+}
+
+.intro-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.intro-chips span {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .12);
+  padding: 7px 13px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #EDE6DD;
+}
+
+/* 4 Cards */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.support-card {
+  background: #fff;
+  border: 1px solid #EFE7D9;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.support-icon {
+  width: 46px;
+  height: 46px;
+  background: #F5EFE6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #B88C78;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.support-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  color: #241A15;
+  margin-bottom: 6px;
+}
+
+.support-card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #6B5D54;
+  margin-bottom: 16px;
+}
+
+.support-card a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: #B88C78;
+  text-decoration: none;
+}
+
+/* FAQ */
+.support-faq {
+  background: #fff;
+  border: 1px solid #EFE7D9;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.support-faq h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #241A15;
+  margin-bottom: 14px;
+}
+
+.support-faq h3 span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  background: #B88C78;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 50px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.faq-item {
+  border-top: 1px solid #EFE7D9;
+}
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: #241A15;
+}
+
+.faq-q i {
+  background: #B88C78;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+  transition: .3s;
+}
+
+/* FAQ khula ho to + ghum jaye */
+.faq-item.open .faq-q i {
+  transform: rotate(45deg);
+  background: #241A15;
+}
+
+.faq-a {
+  display: none;
+  padding: 0 12px 16px;
+  color: #6B5D54;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-item.open .faq-a {
+  display: block;
+}
+
+/* Help Bar - neeche wali dark patti */
+.support-helpbar {
+  background: #241A15;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.support-helpbar b {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.support-helpbar span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, .65);
+}
+
+.support-help-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.support-btn-dark {
+  background: #B88C78;
+  color: #fff;
+  padding: 13px 24px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.support-btn-green {
+  background: #25D366;
+  color: #fff;
+  padding: 13px 24px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Mobile pe Support */
+@media (max-width: 900px) {
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-intro-premium {
+    max-width: 100%;
+  }
+
+  .support-helpbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .support-faq {
+    padding: 20px 16px;
+  }
+}

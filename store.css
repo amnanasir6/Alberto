@@ -1,0 +1,197 @@
+/* ===== STORES - KARACHI ONLY + MAP ===== */
+
+.stores {
+  background: #FDFBF7; /* Pora section ka background - halka cream */
+  color: #1A130E; /* Text ka colour - kala */
+  font-family: "Jost", Arial, sans-serif; /* Font */
+  padding: 70px 0; /* Upar neeche ka gap */
+  text-align: center; /* Heading center me */
+}
+
+/* Beech wala dabba - chauraai kam rakhi hai */
+.stores .wrap {
+  max-width: 1100px; /* Zyada chaura na ho */
+  margin: 0 auto; /* Center me le aao */
+  padding: 0 20px; /* Side se thora gap */
+}
+
+/* ===== HEADING WALA HISSA ===== */
+
+/* Chota text - FIND US */
+.s-eye {
+  font-size: 11px; /* Chota size */
+  letter-spacing: 4px; /* Harf ke beech gap */
+  color: #8A6D1B; /* Gold colour */
+  margin: 0 0 10px; /* Neeche 10px gap */
+}
+
+/* Bara heading - Visit Our Stores */
+.s-title {
+  font-family: "Cormorant Garamond", Georgia, serif; /* Premium wala font */
+  font-size: 52px; /* Bara size */
+  font-weight: 500; /* Halka bold */
+  margin: 0; /* Koi gap nahi */
+  color: #1A130E; /* Kala */
+}
+
+/* Heading ka gold wala lafz - Stores */
+.s-title em {
+  font-style: italic; /* Tircha */
+  color: #8A6D1B; /* Gold */
+}
+
+/* Heading ke neeche wala text */
+.s-sub {
+  color: #6E5F4A; /* Halka brown */
+  font-size: 14px;
+  margin: 8px 0 24px; /* Upar 8, neeche 24 gap */
+}
+
+/* ===== MAP WALA DABBA ===== */
+
+.s-map {
+  background: #FFFDF8; /* White card */
+  border: 1px solid rgba(138, 122, 95, 0.4); /* Halki border */
+  border-radius: 20px; /* Konay gol */
+  overflow: hidden; /* Map bahar na nikle */
+  margin-bottom: 20px; /* Neeche cards se gap */
+  text-align: left; /* Text left me */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Halka shadow */
+}
+
+/* Google Map */
+.s-map iframe {
+  width: 100%; /* Puri chauraai */
+  height: 320px; /* Oonchaai */
+  border: 0; /* Border khatam */
+  display: block;
+}
+
+/* Map ke neeche naam + link wali patti */
+.s-map-info {
+  padding: 16px 20px; /* Andar ka gap */
+  display: flex; /* Ek line me */
+  justify-content: space-between; /* Ek left, ek right */
+  align-items: center; /* Beech me */
+  gap: 12px; /* Beech ka gap */
+  flex-wrap: wrap; /* Mobile pe neeche aa jaye */
+}
+
+/* Map ke neeche store ka naam */
+.s-map-info b {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+  display: block;
+}
+
+/* Map ke neeche address */
+.s-map-info span {
+  color: #6E5F4A; /* Halka brown */
+  font-size: 13px;
+  display: block;
+}
+
+/* Open in Google Maps wala link */
+.s-map-info a {
+  color: #1A130E; /* Kala */
+  font-weight: 700; /* Bold */
+  font-size: 13px;
+  text-decoration: none; /* Neeche wali line khatam */
+  border-bottom: 1px solid #C9A86A; /* Gold wali line */
+}
+
+/* ===== CARDS WALA HISSA ===== */
+
+/* 2 Cards ek line me */
+.s-grid {
+  display: grid; /* Grid */
+  grid-template-columns: repeat(2, 1fr); /* 2 barabar hisse */
+  gap: 16px; /* Cards ke beech gap */
+  text-align: left; /* Text left me */
+}
+
+/* Har ek store ka card */
+.s-card {
+  background: #FFFDF8; /* White */
+  border: 1px solid rgba(138, 122, 95, 0.4); /* Halki border */
+  border-radius: 18px; /* Konay gol */
+  padding: 22px; /* Andar ka gap */
+  cursor: pointer; /* Haath wala cursor */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06); /* Halka shadow */
+}
+
+/* Mouse le jao to border kali ho jaye */
+.s-card:hover {
+  border-color: #1A130E;
+}
+
+/* Jo card select hai wo - moti kali border */
+.s-card.active {
+  border: 2px solid #1A130E;
+}
+
+/* KARACHI likha hua */
+.s-city {
+  font-size: 11px;
+  letter-spacing: 2px; /* Harf me gap */
+  color: #8A6D1B; /* Gold */
+  font-weight: 700; /* Bold */
+}
+
+/* Store ka naam - Clifton */
+.s-card h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 24px;
+  margin: 8px 0 6px; /* Upar 8, neeche 6 gap */
+  color: #1A130E;
+}
+
+/* Address wala text */
+.s-card p {
+  color: #6E5F4A; /* Halka brown */
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Timing - Open wala */
+.s-card .s-time {
+  color: #2E9E5B; /* Green */
+  font-size: 12px;
+  margin-top: 10px; /* Upar gap */
+  font-weight: 600;
+}
+
+/* View on Map wala button */
+.s-btn {
+  margin-top: 16px; /* Upar gap */
+  background: #1A130E; /* Kala button */
+  color: #F2E8D5; /* Cream text */
+  border: 0; /* Border nahi */
+  padding: 10px 18px; /* Andar gap */
+  border-radius: 999px; /* Pura gol */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Jo card select hai uska button gold ho jaye */
+.s-card.active .s-btn {
+  background: #8A6D1B; /* Gold */
+  color: #fff; /* White text */
+}
+
+/* ===== MOBILE KE LIYE ===== */
+@media (max-width: 600px) {
+  /* Mobile pe 1 card ek line me */
+  .s-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Heading chota */
+  .s-title {
+    font-size: 40px;
+  }
+  /* Map thora chota */
+  .s-map iframe {
+    height: 260px;
+  }
+}

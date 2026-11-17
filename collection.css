@@ -1,0 +1,667 @@
+/* ===== COLLECTION - 2ND SECTION ===== */
+.coll {
+  color: #1A130E;
+  font-family: "Jost", Arial, sans-serif;
+  padding: 64px 0 36px;
+  background: #FDFBF7;
+  position: relative;
+  overflow: hidden;
+}
+
+.coll,
+.coll * {
+  box-sizing: border-box;
+}
+
+.coll .wrap {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+
+.coll .head {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 90px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.coll .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6E5F4A;
+  margin-bottom: 18px;
+}
+
+.coll .dot {
+  width: 8px;
+  height: 8px;
+  background: #C9A86A;
+  border-radius: 50%;
+}
+
+.coll .rule {
+  width: 35px;
+  height: 1px;
+  background: #8A7A5F;
+}
+
+.coll .clockchip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid #8A7A5F;
+  border-radius: 999px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.coll .blip {
+  width: 6px;
+  height: 6px;
+  background: #2E9E5B;
+  border-radius: 50%;
+}
+
+.coll .title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin: 0 0 20px;
+  white-space: nowrap;
+}
+
+.coll .title .black-part {
+  color: #161009;
+}
+
+.coll .title .gold-part {
+  font-style: italic;
+  background: linear-gradient(100deg, #5C430A 0%, #8A6D1B 20%, #D4AF37 40%, #FFF3B0 50%, #D4AF37 60%, #8A6D1B 80%, #5C430A 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.coll .title .count {
+  display: inline-block;
+  font-family: "Jost", Arial, sans-serif;
+  font-size: 11px;
+  background: #1A130E;
+  color: #F2E8D5;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-left: 12px;
+  vertical-align: super;
+}
+
+.coll .lede {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4A3F33;
+  max-width: 500px;
+  margin: 0 0 20px;
+}
+
+.coll .lede em {
+  color: #1A130E;
+  font-style: italic;
+}
+
+.coll .lede span {
+  color: #8A6D2B;
+  font-weight: 600;
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-radius: 70px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #241A15;
+  border: 1px solid #241A15;
+  color: #E8DCCB;
+  transition: all .35s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-4px);
+  background-color: #3A2A22;
+  color: #F2EAD9;
+  box-shadow: 0 18px 35px rgba(36, 26, 21, 0.35);
+}
+
+.explore-btn span {
+  transition: transform .35s ease;
+}
+
+.explore-btn:hover span {
+  transform: translateX(4px);
+}
+
+.explore-btn.clicked-brown {
+  background: #2A1F1A;
+  border-color: #2A1F1A;
+  color: #F2EAD9;
+}
+
+.coll .hero-shot {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.coll .arch {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 200px 200px 20px 20px;
+  overflow: hidden;
+  border: 1px solid #B88C78;
+  background: #E8DCCB;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.coll .arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.coll .hero-shot:hover .arch img {
+  transform: scale(1.08);
+}
+
+.arch-chip {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+  white-space: nowrap;
+}
+
+.arch-chip span {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #B88C78;
+}
+
+.arch-chip b {
+  font-size: 13px;
+  color: #241A15;
+}
+
+.seal {
+  position: absolute;
+  left: -22px;
+  bottom: 28px;
+  z-index: 4;
+  width: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: #241A15;
+  color: #E8DCCB;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  border: 1px solid #B88C78;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+.coll .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-top: 1px solid #8A7A5F;
+  border-bottom: 1px solid #8A7A5F;
+}
+
+.coll .tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.coll .tab {
+  padding: 9px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.coll .tab .n {
+  font-size: 10px;
+  background: #E5D9C0;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.coll .tab.on {
+  background: #1A130E;
+  color: #F2E8D5;
+}
+
+.coll .tab.on .n {
+  background: #C9A86A;
+  color: #1A130E;
+}
+
+.coll .arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coll .arw {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #8A7A5F;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.coll .watches {
+  padding: 28px 0 10px;
+  overflow: hidden;
+}
+
+.coll .watches-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.coll .watches-list::-webkit-scrollbar {
+  display: none;
+}
+
+.coll .watch-card {
+  flex: 0 0 clamp(260px, 31%, 360px);
+  flex-shrink: 0;
+  background: #FFFDF8;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.coll .watch-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.coll .watch-pic {
+  position: relative;
+  aspect-ratio: 4/4.6;
+  overflow: hidden;
+  background: #E8DCCB;
+}
+
+.coll .watch-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.coll .watch-card:hover .watch-pic img {
+  transform: scale(1.08);
+}
+
+.coll .badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #1A130E;
+  color: white;
+  font-size: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.coll .info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.coll .info h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 21px;
+  margin: 0 0 4px;
+}
+
+.coll .spec {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+}
+
+.coll .price {
+  text-align: right;
+}
+
+.coll .price b {
+  display: block;
+  font-size: 15px;
+}
+
+.coll .bar {
+  height: 2px;
+  background: #E5D9C0;
+  border-radius: 99px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+
+.coll .bar i {
+  display: block;
+  height: 100%;
+  width: 30%;
+  background: #1A130E;
+  border-radius: 99px;
+}
+
+.coll .feats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 32px 0 18px;
+}
+
+.coll .feat {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(138, 122, 95, 0.3);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.coll .fi {
+  width: 36px;
+  height: 36px;
+  background: #1A130E;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.coll .feat p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.coll .feat p span {
+  display: block;
+  font-weight: 400;
+  color: #7A6A55;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.coll .moving-line {
+  overflow: hidden;
+  border-top: 1px solid #8A7A5F;
+  border-bottom: 1px solid #8A7A5F;
+  padding: 12px 0;
+  margin: 10px 0 20px;
+}
+
+.coll .moving-text {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: moveLeft 22s linear infinite;
+}
+
+.coll .moving-text span {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.coll .moving-text em {
+  color: #8A6D2B;
+  font-style: normal;
+}
+
+@keyframes moveLeft {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== PRODUCT DETAILS POPUP ===== */
+.popup-overlay{position:fixed;inset:0;background:rgba(12,9,6,.72);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:9999;padding:24px;overflow-y:auto}
+.popup-overlay.open{display:flex}
+.popup-box{background:#FDFBF7;color:#1A130E;width:100%;max-width:1040px;max-height:calc(100vh - 48px);overflow-y:auto;border-radius:18px;position:relative;text-align:left;padding:34px;box-shadow:0 25px 80px rgba(0,0,0,.3)}
+.pclose{position:absolute;top:16px;right:18px;background:#1A130E;color:#fff;border:0;width:36px;height:36px;border-radius:50%;cursor:pointer;z-index:3;font-size:23px;line-height:1}
+.popup-product-layout{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);gap:38px;align-items:start}
+.popup-gallery{background:#fff;display:flex;align-items:center;justify-content:center;min-height:440px;border:1px solid #eee8dc}
+.popup-box img{width:100%;height:440px;object-fit:contain;border-radius:0;background:#fff}
+.popup-details{padding:4px 0 0}
+.popup-details .pop-brand{font-family:"Jost",Arial,sans-serif;font-size:29px;font-weight:700;letter-spacing:-.5px;color:#1A130E;margin:0 0 12px}
+.popup-details h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:29px;line-height:1.15;font-weight:600;margin:0 35px 10px 0;color:#1A130E}
+.popup-details .pop-spec{font-family:"Jost",Arial,sans-serif;font-size:13px;line-height:1.5;color:#756b5d;margin:0 0 14px}
+.popup-price-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}
+.popup-price-row strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:27px;color:#315d49}
+.popup-sale{background:#1A5A43;color:white;padding:5px 8px;font-size:10px;font-weight:700;letter-spacing:.5px}
+.popup-sku{font-size:12px;color:#62594e;padding:12px 0;border-top:1px solid #e8e0d3}
+.popup-quantity{display:flex;align-items:center;gap:0;margin:7px 0 14px;font-size:13px;color:#5e554b}
+.popup-quantity span{margin-right:12px}
+.popup-quantity button{width:32px;height:31px;border:1px solid #d8cfbf;background:#fff;cursor:pointer;font-size:18px}
+.popup-quantity input{width:42px;height:31px;text-align:center;border:1px solid #d8cfbf;border-left:0;border-right:0;background:#fff;color:#1A130E}
+.popup-benefits{padding:0 0 0 18px;margin:0 0 18px;font-family:"Jost",Arial,sans-serif;font-size:12px;line-height:1.65;color:#28231d}
+.popup-benefits li{padding-left:1px;margin:2px 0}
+.popup-benefits li::marker{color:#315d49}
+.popup-benefits strong{color:#315d49}
+.popup-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.popup-actions button,.popup-whatsapp-btn{min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;border:0;padding:12px 10px;font-family:"Jost",Arial,sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:.2s}
+.popup-btn{background:#211f1d;color:#fff}
+.popup-btn:hover,.popup-buy-btn:hover{background:#4b3b2b}
+.popup-buy-btn{background:#211f1d;color:#fff}
+.popup-whatsapp-btn{grid-column:1/-1;background:#398c20;color:#fff}
+.popup-whatsapp-btn:hover{background:#287117;color:#fff}
+.popup-box .clear-btn{display:none;background:none;border:0;color:#756b5d;font-size:11px;letter-spacing:1px;text-transform:uppercase;margin:13px auto 0;cursor:pointer}
+.popup-payments{display:flex;align-items:center;gap:9px;flex-wrap:wrap;border-top:1px solid #e8e0d3;margin-top:22px;padding-top:15px;font-size:11px;color:#51483e}
+.popup-payments span{font-weight:600;margin-right:4px}
+.popup-payments b{font-size:9px;padding:5px 7px;border:1px solid #e4ddcf;border-radius:3px;background:#fff;color:#304c69}
+#cartList{grid-column:1/-1}
+@media(max-width:760px){.popup-overlay{padding:10px;align-items:flex-start}.popup-box{padding:22px 17px;max-height:calc(100vh - 20px)}.popup-product-layout{grid-template-columns:1fr;gap:18px}.popup-gallery{min-height:250px}.popup-box img{height:250px}.popup-details .pop-brand{font-size:24px}.popup-details h3{font-size:25px}.popup-benefits{font-size:11px}.popup-payments{margin-top:16px}}
+@media(max-width:420px){.popup-actions{grid-template-columns:1fr}.popup-whatsapp-btn{grid-column:auto}.popup-box{padding:20px 14px}}
+
+@media (max-width: 900px) {
+  .coll .head {
+    grid-template-columns: 1fr 240px;
+    gap: 24px;
+  }
+
+  .coll .title {
+    white-space: normal;
+  }
+
+  .coll .feats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .coll .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .coll .head {
+    grid-template-columns: 1fr;
+  }
+
+  .coll .hero-shot {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 16px;
+    align-items: end;
+  }
+
+  .coll .title {
+    font-size: 44px;
+  }
+
+  .coll .watch-card {
+    flex: 0 0 80%;
+  }
+
+  .coll .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 4px;
+  }
+
+  .coll .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .coll .hero-shot {
+    grid-template-columns: 130px 1fr;
+  }
+
+  .coll .feats {
+    grid-template-columns: 1fr;
+  }
+
+  .coll .watch-card {
+    flex: 0 0 85%;
+  }
+
+  .popup-box img {
+    height: 220px;
+  }
+}
+
+/* Navbar smooth scroll - header ke neeche section na chhupe */
+html {
+  scroll-behavior: smooth;
+}
+
+#collection {
+  scroll-margin-top: 90px;
+}
+/* LIST - Arrow ke liye scroll zaroori hai */
+#watchesList {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 10px 5px 20px 5px;
+  /* Scrollbar chupao lekin scroll chalne do */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#watchesList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Har card ki width fix karo warna wo sikur jayega */
+#watchesList .watch-card {
+  flex: 0 0 300px;
+  width: 300px;
+  max-width: 300px;
+}
+/* ===== CLEAR CART BUTTON ===== */
+.popup-box .clear-btn {
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #6f6558;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 14px auto 0;
+  padding: 0;
+  cursor: pointer;
+}
+.popup-box .clear-btn:hover { color: #1A130E; }
+
+/* ===== CART ICON / NAVBAR MOBILE ===== */
+.nav-icons a { cursor: pointer; }
+@media (max-width: 1199.98px) {
+  .site-header .navbar-collapse {
+    background: rgba(18, 11, 8, 0.96);
+    margin-top: 10px;
+    padding: 14px 18px;
+    border-radius: 12px;
+  }
+  .site-header .nav-links { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .site-header .nav-links .dropdown-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+  }
+  .nav-icons { margin: 12px 0 0; }
+}

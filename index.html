@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERTO — Fine Watches & Clocks</title>
+    <!-- website ka chhota icon  -->
+    <link rel="icon" type="image/png" href="media/logo.png">
+    <!-- mobile pe jab home screen pe save karenge tab ye wala icon aayega -->
+    <link rel="apple-touch-icon" href="media/logo.png">
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- font awesome - icons ke liye -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- hamari css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collection.css">
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="extras.css">
+
+    <!-- navbar se smooth scroll + section chhupe nahi -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #collection,
+        #tech,
+        #craftsmanship,
+        #gallery,
+        #store,
+        #support,
+        #about,
+        #contact,
+        #pricelist,
+        #sitemap {
+            scroll-margin-top: 90px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. upar wali patti + menu -->
+    <header class="site-header">
+        <div class="utility-bar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <p>Complimentary insured delivery on orders over <b>Rs 50,000</b></p>
+                <p class="visitor-count"><img src="media/logo.png" class="v-logo" alt=""><span class="v-dot"></span> Visitors <b id="visitorCount">000000</b></p>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-xl main-nav">
+            <div class="container">
+                <a href="index.html" class="logo navbar-brand">
+                    <span class="logo-circle"><img src="media/logo.png" alt="ALBERTO" class="logo-img"></span>
+                    <span class="logo-text">ALBERTO<small>FINE WATCHES & CLOCKS</small></span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="nav-links navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#collection" class="nav-link">PRODUCTS <i
+                                    class="fa-solid fa-angle-down small-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#collection" data-go-filter="men">Men's Collection</a></li>
+                                <li><a href="#collection" data-go-filter="women">Women's Collection</a></li>
+                                <li><a href="#collection" data-go-filter="vintage">Vintage</a></li>
+                                <li><a href="#collection" data-go-filter="luxury">Luxury</a></li>
+                                <li><a href="#collection" data-go-filter="smart">Smart Watches</a></li>
+                                <li><a href="#collection" data-go-filter="wall">Wall and Desk Clock</a></li>
+                                <li><a href="#pricelist">Complete Price List</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#tech" class="nav-link">TECHNOLOGY</a></li>
+                        <li class="nav-item"><a href="#gallery" class="nav-link">GALLERY</a></li>
+                        <li class="nav-item"><a href="#store" class="nav-link">STORE LOCATOR</a></li>
+                        <li class="nav-item"><a href="#support" class="nav-link">SUPPORT</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">ABOUT US</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <a href="#collection" title="Cart" id="cartIcon"><i class="fa-solid fa-cart-shopping"></i><span
+                                class="cart-count">0</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. hero video -->
+    <section class="hero-video-wrap" id="home">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+            <source src="media/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="container hero-container">
+            <div class="hero-text">
+                <div class="hero-badge"><span class="badge-dot"></span> EST. 1987 &nbsp;•&nbsp; KARACHI
+                </div>
+                <p class="hero-small">ONE OF TIME &nbsp;•&nbsp; ONE OF QUALITY</p>
+                <h1>Timeless <span class="amp-shine">&</span><br><span class="gold-text">luminous.</span></h1>
+                <p class="hero-sub">Fine watches and clocks, an in-house repair atelier and certified appraisals, all
+                    under one roof since 1987.</p>
+                <div class="hero-buttons">
+                    <a href="#collection" class="hero-btn">SHOP THE COLLECTION <span>→</span></a>
+                    <a href="#tech" class="hero-btn">OUR TECHNOLOGY</a>
+                </div>
+                <div class="hero-trust">
+                    <div><b>38+</b><span>Years of Craft</span></div>
+                    <div class="trust-line"></div>
+                    <div><b>80k+</b><span>Happy Clients</span></div>
+                    <div class="trust-line"></div>
+                    <div><b>100%</b><span>Certified Original</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint"><span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 3. collection -->
+    <section class="coll" id="collection">
+        <div class="specks" id="specks"></div>
+        <div class="wrap" id="collWrap">
+            <header class="head">
+                <div>
+                    <div class="eyebrow">
+                        <span class="dot"></span> Our Best Picks <span class="rule"></span>
+                        <span class="clockchip"><span class="blip"></span><b
+                                id="liveTime">00:00:00</b><span>PKT</span></span>
+                    </div>
+                    <h2 class="title">The <em class="premium-word"><span class="black-part">Collec</span><span
+                                class="gold-part">tion</span></em><span class="count">06</span></h2>
+                    <p class="lede">Every watch tells its own story. <em>Handcrafted,</em> a luminous dial and a touch
+                        of gold — <span>Explore 6 collections.</span></p>
+                    <a href="#tabs" class="explore-btn">Explore Collections <span>→</span></a>
+                </div>
+
+                <div class="hero-shot" id="heroShot" data-name="Aurum" data-img="media/pro.png" data-price="PKR 96,000"
+                    data-old="PKR 120,000">
+                    <div class="arch">
+                        <img src="media/pro.png" alt="Featured gold watch">
+                    </div>
+                </div>
+            </header>
+
+            <div class="toolbar">
+                <div class="tabs" id="tabs">
+                    <button class="tab on" data-filter="all">All <span class="n">19</span></button>
+                    <button class="tab" data-filter="men">Men's <span class="n">3</span></button>
+                    <button class="tab" data-filter="women">Women's <span class="n">3</span></button>
+                    <button class="tab" data-filter="luxury">Luxury <span class="n">3</span></button>
+                    <button class="tab" data-filter="smart">Smart Watches <span class="n">3</span></button>
+                    <button class="tab" data-filter="vintage">Vintage <span class="n">3</span></button>
+                    <button class="tab" data-filter="wall">Wall & Desk Clock <span class="n">4</span></button>
+                </div>
+                <div class="arrows">
+                    <span class="counter"><b id="curIdx">01</b> / <span id="totalCount">19</span></span>
+                    <button class="arw" id="prev">←</button>
+                    <button class="arw" id="next">→</button>
+                </div>
+            </div>
+
+            <!-- WATCHES - 19 PICS -->
+            <div class="watches">
+                <div class="watches-list" id="watchesList">
+
+                    <!-- 1. MEN'S -->
+                    <article class="watch-card" data-cat="men">
+                        <div class="watch-pic">
+                            <img src="media/mens/gunmetal-blue-chrono.webp" alt="Gunmetal blue chrono watch">
+                            <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Gunmetal Blue Chrono</h3>
+                                <p class="spec">Chronograph · Steel · 42mm</p>
+                            </div>
+                            <div class="price"><b>PKR 78,500</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="men">
+                        <div class="watch-pic">
+                            <img src="media/mens/meridian-black.webp" alt="Meridian black watch">
+                            <span class="badge">New Arrival</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Meridian Black</h3>
+                                <p class="spec">Automatic · Black Dial · 40mm</p>
+                            </div>
+                            <div class="price"><b>PKR 65,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="men">
+                        <div class="watch-pic">
+                            <img src="media/mens/emerald-automatic.webp" alt="Emerald automatic watch">
+                            <span class="badge">Limited</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Emerald Automatic</h3>
+                                <p class="spec">Automatic · Emerald Dial · 41mm</p>
+                            </div>
+                            <div class="price"><b>PKR 72,000</b></div>
+                        </div>
+                    </article>
+
+                    <!-- 2. WOMEN'S -->
+                    <article class="watch-card" data-cat="women">
+                        <div class="watch-pic">
+                            <img src="media/womens/pink-octagon-crystal.jpg" alt="Pink octagon crystal watch">
+                            <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Pink Octagon Crystal</h3>
+                                <p class="spec">Crystal · Pink Dial · 34mm</p>
+                            </div>
+                            <div class="price"><b>PKR 58,500</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="women">
+                        <div class="watch-pic">
+                            <img src="media/womens/blue-cushion-steel.jpg" alt="Blue cushion steel watch">
+                            <span class="badge">New Arrival</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Blue Cushion Steel</h3>
+                                <p class="spec">Quartz · Blue Dial · 36mm</p>
+                            </div>
+                            <div class="price"><b>PKR 62,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="women">
+                        <div class="watch-pic">
+                            <img src="media/womens/rose-crystal-bangle.jpg" alt="Rose crystal bangle watch">
+                            <span class="badge">Luxury</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Rose Crystal Bangle</h3>
+                                <p class="spec">Bangle · Rose Gold · 32mm</p>
+                            </div>
+                            <div class="price"><b>PKR 68,000</b></div>
+                        </div>
+                    </article>
+
+                    <!-- 3. LUXURY -->
+                    <article class="watch-card" data-cat="luxury">
+                        <div class="watch-pic">
+                            <img src="media/Luxury/onyx-diamond.jpg" alt="Onyx diamond luxury watch">
+                            <span class="badge">Luxury</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Onyx Diamond</h3>
+                                <p class="spec">Diamond · Onyx Dial · 40mm</p>
+                            </div>
+                            <div class="price"><b>PKR 145,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="luxury">
+                        <div class="watch-pic">
+                            <img src="media/Luxury/pearl-diamond-cushion.jpg" alt="Pearl diamond cushion watch">
+                            <span class="badge">Premium</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Pearl Diamond Cushion</h3>
+                                <p class="spec">Diamond · Pearl Dial · 38mm</p>
+                            </div>
+                            <div class="price"><b>PKR 158,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="luxury">
+                        <div class="watch-pic">
+                            <img src="media/Luxury/titan-black-chrono.webp" alt="Titan black chrono luxury watch">
+                            <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Titan Black Chrono</h3>
+                                <p class="spec">Chronograph · Titanium · 43mm</p>
+                            </div>
+                            <div class="price"><b>PKR 132,000</b></div>
+                        </div>
+                    </article>
+
+                    <!-- 4. SMART WATCHES -->
+                    <article class="watch-card" data-cat="smart">
+                        <div class="watch-pic">
+                            <img src="media/smartwatches/fairway-titanium.jpg" alt="Fairway titanium smartwatch">
+                            <span class="badge">New Arrival</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Fairway Titanium</h3>
+                                <p class="spec">Smart · Titanium · 45mm</p>
+                            </div>
+                            <div class="price"><b>PKR 45,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="smart">
+                        <div class="watch-pic">
+                            <img src="media/smartwatches/pulse-midnight.jpg" alt="Pulse midnight smartwatch">
+                            <span class="badge">Best Seller</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Pulse Midnight</h3>
+                                <p class="spec">Smart · AMOLED · 44mm</p>
+                            </div>
+                            <div class="price"><b>PKR 38,500</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="smart">
+                        <div class="watch-pic">
+                            <img src="media/smartwatches/vanta-titan-red.jpg" alt="Vanta titan red smartwatch">
+                            <span class="badge">Limited</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Vanta Titan Red</h3>
+                                <p class="spec">Smart · Titan Red · 46mm</p>
+                            </div>
+                            <div class="price"><b>PKR 52,000</b></div>
+                        </div>
+                    </article>
+
+                    <!-- 5. VINTAGE -->
+                    <article class="watch-card" data-cat="vintage">
+                        <div class="watch-pic">
+                            <img src="media/Vintage/classics-roman-blue.jpg" alt="Classic roman blue vintage watch">
+                            <span class="badge">Vintage</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Classic Roman Blue</h3>
+                                <p class="spec">Vintage · Roman Dial · 38mm</p>
+                            </div>
+                            <div class="price"><b>PKR 88,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="vintage">
+                        <div class="watch-pic">
+                            <img src="media/Vintage/tonneau-gold-noir.jpg" alt="Tonneau gold noir vintage watch">
+                            <span class="badge">Rare</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Tonneau Gold Noir</h3>
+                                <p class="spec">Vintage · Gold Noir · 39mm</p>
+                            </div>
+                            <div class="price"><b>PKR 95,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="vintage">
+                        <div class="watch-pic">
+                            <img src="media/Vintage/vanguard-black-gold.webp" alt="Vanguard black gold vintage watch">
+                            <span class="badge">Collector</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Vanguard Black Gold</h3>
+                                <p class="spec">Vintage · Black Gold · 41mm</p>
+                            </div>
+                            <div class="price"><b>PKR 92,000</b></div>
+                        </div>
+                    </article>
+
+                    <!-- 6. WALL & DESK CLOCK -->
+                    <article class="watch-card" data-cat="wall">
+                        <div class="watch-pic">
+                            <img src="media/Wall and Desk/noir-pendulum-wall.jpg" alt="Noir pendulum wall clock">
+                            <span class="badge">Wall Clock</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Noir Pendulum Wall</h3>
+                                <p class="spec">Wall Clock · Pendulum · 35cm</p>
+                            </div>
+                            <div class="price"><b>PKR 28,500</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="wall">
+                        <div class="watch-pic">
+                            <img src="media/Wall and Desk/crystal-cube-movement.jpg" alt="Crystal cube movement clock">
+                            <span class="badge">Desk Clock</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Crystal Cube Movement</h3>
+                                <p class="spec">Desk Clock · Crystal · 12cm</p>
+                            </div>
+                            <div class="price"><b>PKR 32,000</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="wall">
+                        <div class="watch-pic">
+                            <img src="media/Wall and Desk/orbit-gold-wall.jpg" alt="Orbit gold wall clock">
+                            <span class="badge">Wall Clock</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Orbit Gold Wall</h3>
+                                <p class="spec">Wall Clock · Round · 40cm</p>
+                            </div>
+                            <div class="price"><b>PKR 29,500</b></div>
+                        </div>
+                    </article>
+
+                    <article class="watch-card" data-cat="wall">
+                        <div class="watch-pic">
+                            <img src="media/Wall and Desk/noir-square-desk.jpg" alt="Noir square desk clock">
+                            <span class="badge">Desk Clock</span>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h3>Noir Square Desk</h3>
+                                <p class="spec">Desk Clock · Square · 14cm</p>
+                            </div>
+                            <div class="price"><b>PKR 25,000</b></div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="bar"><i id="barFill"></i></div>
+            </div>
+            <!-- Moving line - SIRF 1 BAAR -->
+            <div class="moving-line">
+                <div class="moving-text">
+                    <span>Men's <em>3</em></span>
+                    <span>Women's <em>3</em></span>
+                    <span>Luxury <em>3</em></span>
+                    <span>Smart Watches <em>3</em></span>
+                    <span>Vintage <em>3</em></span>
+                    <span>Wall & Desk Clock <em>4</em></span>
+                    <span>Men's <em>3</em></span>
+                    <span>Women's <em>3</em></span>
+                    <span>Luxury <em>3</em></span>
+                    <span>Smart Watches <em>3</em></span>
+                    <span>Vintage <em>3</em></span>
+                    <span>Wall & Desk Clock <em>4</em></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUCT DETAILS POPUP (shared by every product card) -->
+    <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+        <div class="popup-box">
+            <button class="pclose" type="button" aria-label="Close product details">×</button>
+            <div class="popup-product-layout">
+                <div class="popup-gallery">
+                    <img id="popImg" src="" alt="Watch">
+                </div>
+                <div class="popup-details">
+                    <p class="pop-brand" id="popMeta">ALBERTO</p>
+                    <h3 id="popTitle">Product name</h3>
+                    <p class="pop-spec" id="popSpec"></p>
+                    <div class="popup-price-row">
+                        <strong id="popPrice">PKR 0</strong>
+                        <span class="popup-sale">AUTHENTIC COLLECTION</span>
+                    </div>
+                    <div class="popup-sku" id="popSku">SKU: —</div>
+                    <div class="popup-quantity">
+                        <span>Qty:</span>
+                        <button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button>
+                        <input id="popQty" type="number" min="1" value="1" aria-label="Quantity">
+                        <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+                    </div>
+                    <ul class="popup-benefits">
+                        <li><strong>100% ORIGINAL</strong> WATCH</li>
+                        <li>Accessories included: original presentation box, branded shopping bag, and warranty card</li>
+                        <li><strong>2 YEARS</strong> official warranty for Swiss brands</li>
+                        <li><strong>1 YEAR</strong> official warranty for fashion brands</li>
+                        <li><strong>7 DAYS</strong> returns and exchange policy</li>
+                        <li>Quick &amp; <strong>FREE</strong> delivery</li>
+                        <li><strong>50% ADVANCE</strong> payment on orders above PKR 25,000</li>
+                    </ul>
+                    <div class="popup-actions">
+                        <button class="popup-btn" id="addToCartBtn" type="button">Add to Cart</button>
+                        <button class="popup-buy-btn" id="buyNowBtn" type="button">Buy It Now</button>
+                        <a class="popup-whatsapp-btn" id="whatsappOrderBtn" href="https://wa.me/923001234567" target="_blank" rel="noopener">☏ &nbsp; Order through WhatsApp</a>
+                    </div>
+                    <button class="clear-btn" id="clearCartBtn" type="button">Clear Cart</button>
+                </div>
+            </div>
+            <div class="popup-payments">
+                <span>Pay via:</span>
+                <b>Bank Transfer</b><b>VISA</b><b>Mastercard</b><b>PayFast</b><b>JazzCash</b><b>EasyPaisa</b>
+            </div>
+        </div>
+    </div>
+    <!-- PRICE LIST -->
+    <section class="pricelist" id="pricelist">
+        <div class="pl-wrap">
+            <p class="pl-eye">— PRICE LIST —</p>
+            <h2 class="pl-title">Complete <em>Price List</em></h2>
+            <p class="pl-sub">Every Alberto watch and clock, with its price. Click a row for full details.</p>
+            <div class="pl-filter" id="plFilter">
+                <button class="on" data-f="all">All</button>
+                <button data-f="men">Men's</button>
+                <button data-f="women">Women's</button>
+                <button data-f="luxury">Luxury</button>
+                <button data-f="smart">Smart Watches</button>
+                <button data-f="vintage">Vintage</button>
+                <button data-f="wall">Wall &amp; Desk</button>
+            </div>
+            <div class="pl-scroll">
+                <table class="pl-table">
+                    <thead><tr><th>PRODUCT</th><th>CATEGORY</th><th>SPECIFICATION</th><th>PRICE</th></tr></thead>
+                    <tbody id="priceBody"></tbody>
+                </table>
+            </div>
+            <p class="pl-hint">Prices in Pakistani Rupees (PKR).</p>
+        </div>
+    </section>
+
+    <!-- 5. technology wala hissa -->
+    <section class="sig" id="tech">
+        <div class="sig-glow"></div>
+        <div class="container">
+            <div class="sig-grid">
+                <div class="sig-copy">
+                    <p class="sig-eyebrow"><span class="sig-dot"></span>THE SIGNATURE PIECE<span
+                            class="sig-rule"></span></p>
+                    <h2>The watch that <em>catches every light.</em></h2>
+                    <p class="sig-lead">Hand-finished cases, polished dials and bracelets that move like silk — every
+                        piece is inspected in our own atelier before it ever reaches your wrist.</p>
+                    <div class="sig-specs">
+                        <div class="sig-spec"><span>Finish</span><b>Hand-polished</b></div>
+                        <div class="sig-spec"><span>Inspection</span><b>In-house atelier</b></div>
+                        <div class="sig-spec"><span>Authenticity</span><b>Certified original</b></div>
+                        <div class="sig-spec"><span>Warranty</span><b>2 years</b></div>
+                    </div>
+                    <div class="sig-actions">
+                        <a href="#tabs" class="sig-btn sig-btn-fill">Explore the piece <span>→</span></a>
+                    </div>
+                </div>
+                <div class="sig-visual">
+                    <div class="sig-tilt" id="sigTilt">
+                        <div class="sig-ring"></div>
+                        <div class="sig-ring sig-ring-2"></div>
+                        <div class="sig-track"></div>
+                        <div class="sig-track sig-track-minor"></div>
+                        <video class="sig-video" id="sigVideo" autoplay muted loop playsinline preload="metadata">
+                            <source src="media/video/Tech.mp4" type="video/mp4">
+                        </video>
+                        <div class="sig-chip sig-chip-a"><span class="sig-live"></span>360° view</div>
+                        <div class="sig-chip sig-chip-b"><span>No. 01</span><b>Signature</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. craftsmanship -->
+    <section class="atelier-section" id="craftsmanship">
+        <div class="container">
+            <div class="craft-intro">
+                <div class="craft-intro-left">
+                    <p class="atelier-kicker"><span></span> THE ART OF WATCHMAKING</p>
+                    <h2>Made with purpose.<br><em>Finished with care.</em></h2>
+                </div>
+                <div class="craft-intro-right">
+                    <p class="atelier-lead">Every Alberto timepiece reflects a respect for detail, thoughtful design and
+                        the enduring beauty of fine watchmaking.</p>
+                    <a class="atelier-link" href="#gallery">DISCOVER OUR APPROACH <span>↗</span></a>
+                </div>
+            </div>
+            <div class="craft-body">
+                <div class="craft-visual">
+                    <div class="craft-visual-frame">
+                        <img src="gallery/emerald-automatic.webp" alt="Alberto automatic watch">
+                    </div>
+                    <div class="craft-badge">
+                        <span class="craft-badge-num">38+</span>
+                        <span class="craft-badge-label">Years of<br>craftsmanship</span>
+                    </div>
+                </div>
+                <div class="craft-pillars">
+                    <article class="craft-pillar"><span class="craft-pillar-num">01</span>
+                        <div>
+                            <h3>Considered design</h3>
+                            <p>Every proportion, every curve is drawn by hand before it ever meets metal.</p>
+                        </div>
+                    </article>
+                    <article class="craft-pillar"><span class="craft-pillar-num">02</span>
+                        <div>
+                            <h3>Careful finishing</h3>
+                            <p>Hand-polished cases, brushed surfaces and bevelled edges.</p>
+                        </div>
+                    </article>
+                    <article class="craft-pillar"><span class="craft-pillar-num">03</span>
+                        <div>
+                            <h3>Timeless character</h3>
+                            <p>Built to be worn for decades, not seasons.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== GALLERY - 18 PHOTOS - PREMIUM ===== -->
+    <section id="gallery" class="gallery2">
+        <div class="wrap">
+
+            <!-- Upar wala heading -->
+            <div class="g2-top">
+                <p class="g2-eyebrow">— THE COLLECTION —</p>
+                <h2 class="g2-title">Timeless <em>Pieces</em></h2>
+                <p class="g2-sub">18 handpicked watches. Click any piece to view.</p>
+            </div>
+
+            <!-- Filter buttons - All, Men, Women... -->
+            <div class="g2-tabs" id="gTabs">
+                <button class="g2-tab on" data-filter="all">All 18</button>
+                <button class="g2-tab" data-filter="men">Men's</button>
+                <button class="g2-tab" data-filter="women">Women's</button>
+                <button class="g2-tab" data-filter="luxury">Luxury</button>
+                <button class="g2-tab" data-filter="smart">Smart</button>
+                <button class="g2-tab" data-filter="vintage">Vintage</button>
+                <button class="g2-tab" data-filter="wall">Wall</button>
+            </div>
+
+            <!-- Kitni dikh rahi hain -->
+            <div class="g2-count"><span id="gCur">18</span> Pieces Shown</div>
+
+            <!-- Photos ka grid -->
+            <div class="g2-grid" id="gGrid">
+
+                <!-- ===== MEN'S - 3 ===== -->
+                <!-- Steel wali, blue dial wali -->
+                <div class="g2-item" data-cat="men">
+                    <div class="g2-img"><img src="gallery/blue-cushion-steel.jpg" alt="Blue Cushion Steel"></div>
+                    <div class="g2-info"><b>Blue Cushion Steel</b><span>Men • Steel</span></div>
+                    <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Roman numbers wali blue -->
+                <div class="g2-item" data-cat="men">
+                    <div class="g2-img"><img src="gallery/classics-roman-blue.jpg" alt="Classics Roman Blue"></div>
+                    <div class="g2-info"><b>Classics Roman Blue</b><span>Men • Classic</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Black chrono wali -->
+                <div class="g2-item" data-cat="men">
+                    <div class="g2-img"><img src="gallery/titan-black-chrono.webp" alt="Titan Black Chrono"></div>
+                    <div class="g2-info"><b>Titan Black Chrono</b><span>Men • Chrono</span></div>
+                    <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- ===== WOMEN'S - 3 ===== -->
+                <!-- Pearl + Diamond wali -->
+                <div class="g2-item" data-cat="women">
+                    <div class="g2-img"><img src="gallery/pearl-diamond-cushion.jpg" alt="Pearl Diamond"></div>
+                    <div class="g2-info"><b>Pearl Diamond Cushion</b><span>Women • Diamond</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Pink octagon crystal wali -->
+                <div class="g2-item" data-cat="women">
+                    <div class="g2-img"><img src="gallery/pink-octagon-crystal.jpg" alt="Pink Octagon"></div>
+                    <div class="g2-info"><b>Pink Octagon Crystal</b><span>Women • Crystal</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Rose bangle wali -->
+                <div class="g2-item" data-cat="women">
+                    <div class="g2-img"><img src="gallery/rose-crystal-bangle.jpg" alt="Rose Crystal Bangle"></div>
+                    <div class="g2-info"><b>Rose Crystal Bangle</b><span>Women • Bangle</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- ===== LUXURY - 3 ===== -->
+                <!-- Black diamond wali -->
+                <div class="g2-item" data-cat="luxury">
+                    <div class="g2-img"><img src="gallery/onyx-diamond.jpg" alt="Onyx Diamond"></div>
+                    <div class="g2-info"><b>Onyx Diamond</b><span>Luxury • Diamond</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Gold noir tonneau wali -->
+                <div class="g2-item" data-cat="luxury">
+                    <div class="g2-img"><img src="gallery/tonneau-gold-noir.jpg" alt="Tonneau Gold Noir"></div>
+                    <div class="g2-info"><b>Tonneau Gold Noir</b><span>Luxury • Gold</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Black + Gold vanguard wali -->
+                <div class="g2-item" data-cat="luxury">
+                    <div class="g2-img"><img src="gallery/vanguard-black-gold.webp" alt="Vanguard Black Gold"></div>
+                    <div class="g2-info"><b>Vanguard Black Gold</b><span>Luxury • Gold</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- ===== SPORT - 3 ===== -->
+                <!-- Titanium fairway wali -->
+                <div class="g2-item" data-cat="smart">
+                    <div class="g2-img"><img src="gallery/fairway-titanium.jpg" alt="Fairway Titanium"></div>
+                    <div class="g2-info"><b>Fairway Titanium</b><span>Smart • Titanium</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Red titan wali -->
+                <div class="g2-item" data-cat="smart">
+                    <div class="g2-img"><img src="gallery/vanta-titan-red.jpg" alt="Vanta Titan Red"></div>
+                    <div class="g2-info"><b>Vanta Titan Red</b><span>Smart • Titan</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Midnight pulse wali -->
+                <div class="g2-item" data-cat="smart">
+                    <div class="g2-img"><img src="gallery/pulse-midnight.jpg" alt="Pulse Midnight"></div>
+                    <div class="g2-info"><b>Pulse Midnight</b><span>Smart • Midnight</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- ===== VINTAGE - 3 ===== -->
+                <!-- Titanium fairway wali -->
+                <div class="g2-item" data-cat="vintage">
+                    <div class="g2-img"><img src="gallery/tonneau-gold-noir.jpg" alt="Tonneau Gold Noir"></div>
+                    <div class="g2-info"><b>Tonneau Gold Noir</b><span>Vintage • Gold</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Emerald automatic wali -->
+                <div class="g2-item" data-cat="vintage">
+                    <div class="g2-img"><img src="gallery/emerald-automatic.webp" alt="Emerald Automatic"></div>
+                    <div class="g2-info"><b>Emerald Automatic</b><span>Vintage • Automatic</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Black meridian wali -->
+                <div class="g2-item" data-cat="vintage">
+                    <div class="g2-img"><img src="gallery/meridian-black.webp" alt="Meridian Black"></div>
+                    <div class="g2-info"><b>Meridian Black</b><span>Vintage • Classic</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- ===== WALL - 3 ===== -->
+                <!-- Pendulum wall wali -->
+                <div class="g2-item" data-cat="wall">
+                    <div class="g2-img"><img src="gallery/noir-pendulum-wall.jpg" alt="Noir Pendulum Wall"></div>
+                    <div class="g2-info"><b>Noir Pendulum Wall</b><span>Wall • Pendulum</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Square desk wali -->
+                <div class="g2-item" data-cat="wall">
+                    <div class="g2-img"><img src="gallery/noir-square-desk.jpg" alt="Noir Square Desk"></div>
+                    <div class="g2-info"><b>Noir Square Desk</b><span>Wall • Desk</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Gold wall wali -->
+                <div class="g2-item" data-cat="wall">
+                    <div class="g2-img"><img src="gallery/orbit-gold-wall.jpg" alt="Orbit Gold Wall"></div>
+                    <div class="g2-info"><b>Orbit Gold Wall</b><span>Wall • Gold</span></div>
+                     <div class="g2-cart-row">
+                        <div class="g2-qty">
+                            <button class="g2-qty-btn" data-action="minus">-</button>
+                            <span class="g2-qty-num">0</span>
+                            <button class="g2-qty-btn" data-action="plus">+</button>
+                        </div>
+                        <button class="g2-add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Lightbox - click pe bari photo -->
+        <div class="g2-lightbox" id="gLightbox">
+            <button class="g2-close" id="gClose">✕</button>
+            <button class="g2-arrow g2-prev" id="gPrev">←</button>
+            <img id="gBigImg" src="" alt="">
+            <p id="gBigText"></p>
+            <button class="g2-arrow g2-next" id="gNext">→</button>
+        </div>
+    </section>
+    <!-- ===== STORES - KARACHI ONLY + MAP ===== -->
+    <section id="store" class="stores">
+        <div class="wrap">
+
+            <p class="s-eye">— FIND US —</p>
+            <h2 class="s-title">Visit Our <em>Karachi Stores</em></h2>
+            <p class="s-sub">Karachi • 2 Stores</p>
+
+            <!-- MAP -->
+            <div class="s-map">
+                <iframe id="sMap" src="https://www.google.com/maps?q=Clifton+Karachi&output=embed"></iframe>
+                <div class="s-map-info">
+                    <div>
+                        <b id="sMapName">Clifton Flagship</b>
+                        <span id="sMapAddr">Clifton Block 5, Karachi</span>
+                    </div>
+                    <a id="sMapLink" href="https://www.google.com/maps?q=Clifton+Karachi" target="_blank">Open in Google
+                        Maps →</a>
+                </div>
+            </div>
+
+            <!-- 2 CARDS - KARACHI ONLY -->
+            <div class="s-grid" id="sGrid">
+                <!-- KARACHI 1 -->
+                <div class="s-card active" data-map="https://www.google.com/maps?q=Clifton+Karachi&output=embed"
+                    data-name="Clifton Flagship" data-addr="Clifton Block 5, Karachi"
+                    data-link="https://www.google.com/maps?q=Clifton+Karachi">
+                    <span class="s-city">KARACHI</span>
+                    <h3>Clifton </h3>
+                    <p>Clifton Block 5, Karachi</p>
+                    <p class="s-time">10 AM - 10 PM • Open</p> <!-- Same time -->
+                    <button class="s-btn">View on Map →</button>
+                </div>
+
+                <!-- KARACHI 2 -->
+                <div class="s-card" data-map="https://www.google.com/maps?q=Tariq+Road+Karachi&output=embed"
+                    data-name="Tariq Road" data-addr="Main Tariq Road, Karachi"
+                    data-link="https://www.google.com/maps?q=Tariq+Road+Karachi">
+                    <span class="s-city">KARACHI</span>
+                    <h3>Tariq Road</h3>
+                    <p>Main Tariq Road, Karachi</p>
+                    <p class="s-time">10 AM - 10 PM • Open</p> <!-- Same time -->
+                    <button class="s-btn">View on Map →</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- SUPPORT SECTION START -->
+    <section class="support-section" id="support">
+        <div class="container">
+            <div class="support-head">
+                <div>
+                    <p class="atelier-kicker"><span></span> ALBERTO CARE • SUPPORT</p>
+                    <h2>We are here,<br><em>at every step.</em></h2>
+                </div>
+                <div class="support-intro-premium">
+                    <p class="intro-label">CONCIERGE • AVAILABLE 24/7</p>
+                    <p>Watch not working? Need warranty? Want to track your order? Choose your issue below, you will
+                        find the solution.</p>
+                    <div class="intro-chips">
+                        <span>Repair</span>
+                        <span>Warranty</span>
+                        <span>Track Order</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h4>Watch Repair</h4>
+                    <p>Battery, strap or movement issue? Get it fixed by experts.</p>
+                    <a href="#contact">Start Repair →</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Warranty Claim</h4>
+                    <p>2-year warranty on movement and manufacturing faults.</p>
+                    <a href="#contact">Claim Warranty →</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h4>Track Order</h4>
+                    <p>Check where your order is, from dispatch to delivery.</p>
+                    <a href="#contact">Track Now →</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <h4>Order Support</h4>
+                    <p>Return, exchange or any question about your order.</p>
+                    <a href="#contact">Get Help →</a>
+                </div>
+            </div>
+
+            <div class="support-faq">
+                <h3>Frequently Asked Questions <span>FAQ</span></h3>
+                <div class="faq-item">
+                    <button class="faq-q" type="button">How long will delivery take? <i
+                            class="fa-solid fa-plus"></i></button>
+                    <p class="faq-a">Delivery across Pakistan takes 2-4 working days. Orders above Rs 50,000 get free
+                        and insured delivery.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" type="button">What is covered in the warranty? <i
+                            class="fa-solid fa-plus"></i></button>
+                    <p class="faq-a">The 2-year warranty covers movement and manufacturing faults. Broken glass or worn
+                        straps are not covered, but can be repaired separately.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" type="button">How do I return my watch? <i
+                            class="fa-solid fa-plus"></i></button>
+                    <p class="faq-a">You can return within 14 days. The watch must be in original condition, with box
+                        and bill. Select "Order support" in the Contact form below, we will arrange pickup.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" type="button">How do I send my watch for repair? <i
+                            class="fa-solid fa-plus"></i></button>
+                    <p class="faq-a">You can visit any of our showrooms in Karachi, Lahore or Islamabad, or select
+                        "Watch repair" in the Contact form. We will send you the address and process.</p>
+                </div>
+            </div>
+
+            <div class="support-helpbar">
+                <div>
+                    <b>Still need help?</b>
+                    <span>Our team replies within 1 business day.</span>
+                </div>
+                <div class="support-help-btns">
+                    <a href="#contact" class="support-btn-dark">CONTACT US <span>→</span></a>
+                    <a href="https://wa.me/923001234567" target="_blank" class="support-btn-green"><i
+                            class="fa-brands fa-whatsapp"></i> WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUPPORT SECTION END -->
+
+    <!-- 7 about -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <p class="about-eyebrow">OUR STORY • EST. 1987</p>
+            <div class="about-grid">
+                <div class="about-img-wrap">
+                    <img src="media/about.png" class="about-img" alt="Alberto Watch">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-title"><span class="line line-1">More than time.</span><span class="line line-2">A
+                            tradition.</span></h2>
+                    <p class="about-label">CRAFTED AROUND YOU</p>
+                    <h3 class="about-sub">For over three decades, Alberto has brought together a passion for fine
+                        timepieces and a commitment to lasting relationships.</h3>
+                    <p class="about-para">From carefully selected watches to our in-house repair atelier and certified
+                        appraisals, every detail reflects the values we have stood by since 1987: knowledge, integrity
+                        and a genuine appreciation for the art of timekeeping.</p>
+                    <a href="#about" class="about-link">GET TO KNOW ALBERTO <span>↗</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. contact -->
+    <section class="atelier-contact" id="contact">
+        <div class="container">
+            <div class="atelier-contact-grid">
+                <div class="atelier-contact-intro">
+                    <p class="atelier-kicker"><span></span> WE'D LOVE TO HEAR FROM YOU</p>
+                    <h2>Every great story<br>starts with <em>hello.</em></h2>
+                    <p class="atelier-contact-lead">Whether you're searching for a special timepiece or need expert care
+                        for one you already own, our team is here to help.</p>
+                    <div class="atelier-contact-details">
+                        <div><span>EMAIL</span>
+                            <p class="cd-line"><i class="fa-regular fa-envelope"></i><a href="mailto:info@albertoclocks.com">info@albertoclocks.com</a></p>
+                        </div>
+                        <div><span>ADDRESS</span>
+                            <p class="cd-line"><i class="fa-solid fa-location-dot"></i>Alberto Fine Watches &amp; Clocks, Clifton Block 5, Karachi, Pakistan</p>
+                        </div>
+                        <div><span>CONTACT NUMBER</span>
+                            <p class="cd-line"><i class="fa-solid fa-phone"></i><a href="tel:+922135870000">+92 21 3587 0000</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="atelier-form" id="atelierContactForm">
+                    <div class="atelier-form-row">
+                        <label>Your name<input type="text" name="name" placeholder="Full name" required></label>
+                        <label>Email address<input type="email" name="email" placeholder="Email address"
+                                required></label>
+                    </div>
+                    <label>What can we help you with?
+                        <select name="enquiry" required>
+                            <option value="" selected disabled>Select an enquiry</option>
+                            <option>Product enquiry</option>
+                            <option>Watch repair & servicing</option>
+                            <option>Authenticity & appraisal</option>
+                            <option>Order support</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+                    <label>Your message<textarea name="message" rows="4"
+                            placeholder="Tell us a little about what you're looking for..." required></textarea></label>
+                    <button type="submit" class="atelier-submit">SEND YOUR ENQUIRY <span>↗</span></button>
+                    <p class="atelier-form-note">We typically respond within one business day.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SITE MAP -->
+    <section class="sitemap" id="sitemap">
+        <div class="pl-wrap">
+            <p class="pl-eye">— SITE MAP —</p>
+            <h2 class="pl-title">Find your <em>way around</em></h2>
+            <p class="pl-sub">Every page and section of the Alberto website.</p>
+            <div class="sm-grid">
+                <div class="sm-col"><h4>PRODUCTS</h4><ul>
+                    <li><a href="#collection" data-go-filter="men">Men's Collection</a></li>
+                    <li><a href="#collection" data-go-filter="women">Women's Collection</a></li>
+                    <li><a href="#collection" data-go-filter="vintage">Vintage</a></li>
+                    <li><a href="#collection" data-go-filter="luxury">Luxury</a></li>
+                    <li><a href="#collection" data-go-filter="smart">Smart Watches</a></li>
+                    <li><a href="#collection" data-go-filter="wall">Wall and Desk Clock</a></li>
+                    <li><a href="#pricelist">Complete Price List</a></li></ul></div>
+                <div class="sm-col"><h4>DISCOVER</h4><ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tech">Technology</a></li>
+                    <li><a href="#craftsmanship">Craftsmanship</a></li>
+                    <li><a href="#gallery">Gallery</a></li></ul></div>
+                <div class="sm-col"><h4>SERVICE</h4><ul>
+                    <li><a href="#store">Store Locator</a></li>
+                    <li><a href="#support">Support</a></li></ul></div>
+                <div class="sm-col"><h4>COMPANY</h4><ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#sitemap">Site Map</a></li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-news">
+                <div>
+                    <p class="footer-eyebrow">THE ALBERTO LETTER</p>
+                    <h2>New pieces, <em>first.</em></h2>
+                </div>
+                <form class="news-form" id="newsForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="footer-ticks"></div>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo"><img src="media/logo.png" alt="ALBERTO"><span
+                            class="footer-logo-text">ALBERTO<small>FINE WATCHES & CLOCKS</small></span></a>
+                    <p>Fine watches and clocks, an in-house repair atelier and certified appraisals, all under one roof
+                        since 1987.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#collection" data-go-filter="men">Men's Collection</a></li>
+                        <li><a href="#collection" data-go-filter="women">Women's Collection</a></li>
+                        <li><a href="#collection" data-go-filter="vintage">Vintage</a></li>
+                        <li><a href="#collection" data-go-filter="luxury">Luxury</a></li>
+                        <li><a href="#collection" data-go-filter="smart">Smart Watches</a></li>
+                        <li><a href="#collection" data-go-filter="wall">Wall and Desk Clock</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="#tech">Technology</a></li>
+                        <li><a href="#store">Store Locator</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#sitemap">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alberto Fine Watches &amp; Clocks. All rights reserved.</p>
+                <p>Karachi</p>
+            </div>
+        </div>
+        <div class="footer-ticker">
+            <div class="ticker-track" id="tickerTrack">
+                <span><i class="fa-regular fa-calendar"></i><b>Date</b><em class="js-date">--</em></span>
+                <span class="t-sep">◆</span>
+                <span><i class="fa-regular fa-clock"></i><b>Time</b><em class="js-time">--:--:--</em></span>
+                <span class="t-sep">◆</span>
+                <span><i class="fa-solid fa-location-dot"></i><b>Location</b><em class="js-loc">Locating…</em></span>
+                <span class="t-sep">◆</span>
+                <span><i class="fa-solid fa-truck-fast"></i><em>Complimentary insured delivery on orders over <strong>Rs
+                            50,000</strong></em></span>
+                <span class="t-sep">◆</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WELCOME POPUP -->
+    <div class="welcome-overlay" id="welcomeOverlay" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle" aria-hidden="true">
+        <div class="welcome-box">
+            <button class="welcome-close" id="welcomeClose" type="button" aria-label="Close">&times;</button>
+            <img src="media/logo.png" alt="ALBERTO" class="welcome-logo">
+            <p class="welcome-eye">WELCOME TO ALBERTO</p>
+            <h3 id="welcomeTitle">Timeless pieces, <em>delivered with care.</em></h3>
+            <p class="welcome-text">Enjoy complimentary insured delivery on orders over <b>Rs 50,000</b>, and a 2-year warranty on every certified original watch.</p>
+            <a href="#collection" class="welcome-btn" id="welcomeCta">Explore the collection &rarr;</a>
+            <button class="welcome-skip" id="welcomeSkip" type="button">Maybe later</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="collection.js"></script>
+    <script src="tech.js"></script>
+    <script src="about.js"></script>
+    <script src="gallery.js"></script>
+    <script src="store.js"></script>
+    <script src="extras.js"></script>
+    <script src="validation.js"></script>
+</body>
+
+</html>
